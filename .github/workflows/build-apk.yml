@@ -25,7 +25,7 @@ jobs:
           cache-disabled: true
 
       - name: Generate Gradle Wrapper
-        run: gradle wrapper --gradle-version 8.7 --distribution-type all || true
+        run: gradle assembleRelease --no-daemon --no-build-cache --rerun-tasks
 
       - name: Clean build directory
         run: rm -rf app/build
