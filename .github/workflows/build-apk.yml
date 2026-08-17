@@ -18,17 +18,14 @@ jobs:
           distribution: "temurin"
           java-version: "17"
 
-      - name: Setup Gradle
-        uses: gradle/actions/setup-gradle@v3
-        with:
-          gradle-version: "8.7"
-          cache-disabled: true
+      - name: Install Gradle
+        run: apt-get update && apt-get install -y gradle
 
       - name: Clean build directory
         run: rm -rf app/build
 
       - name: Build release APK
-        run: ./gradlew assembleRelease --no-daemon --no-build-cache --rerun-tasks
+        run: gradle assembleRelease --no-daemon --no-build-cache --rerun-tasks
 
       - name: Upload APK artifact
         uses: actions/upload-artifact@v4
