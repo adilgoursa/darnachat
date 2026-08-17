@@ -28,7 +28,7 @@ jobs:
         run: rm -rf app/build
 
       - name: Build release APK
-        run: gradle assembleRelease --no-daemon --no-build-cache --rerun-tasks
+        run: ./gradlew assembleRelease --no-daemon --no-build-cache --rerun-tasks
 
       - name: Upload APK artifact
         uses: actions/upload-artifact@v4
