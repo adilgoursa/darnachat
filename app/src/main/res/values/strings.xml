@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Darna</string>
+
+    <string name="login_title">تسجيل الدخول</string>
+    <string name="email_hint">البريد الإلكتروني</string>
+    <string name="password_hint">كلمة المرور</string>
+    <string name="name_hint">الاسم</string>
+    <string name="login_button">دخول</string>
+    <string name="register_button">إنشاء حساب</string>
+    <string name="no_account_text">ليس لديك حساب؟ سجّل الآن</string>
+    <string name="have_account_text">لديك حساب؟ سجّل الدخول</string>
+    <string name="register_title">إنشاء حساب جديد</string>
+
+    <string name="chats_title">الدردشات</string>
+    <string name="type_message_hint">اكتب رسالة…</string>
+    <string name="send_button">إرسال</string>
+
+    <string name="error_empty_fields">الرجاء تعبئة جميع الحقول</string>
+    <string name="error_generic">حدث خطأ، حاول مرة أخرى</string>
+    <string name="logout">تسجيل الخروج</string>
+
+    <string name="attach_image">إرفاق صورة</string>
+    <string name="take_photo">التقاط صورة</string>
+    <string name="record_audio">تسجيل صوتي</string>
+    <string name="uploading">جارٍ الإرسال…</string>
+    <string name="permission_needed">هذا الإذن مطلوب لاستخدام هذه الميزة</string>
+
+    <string name="profile_title">الملف الشخصي</string>
+    <string name="profile_button">الملف الشخصي</string>
+    <string name="change_photo">تغيير الصورة</string>
+    <string name="choose_from_gallery">اختيار من المعرض</string>
+    <string name="save_button">حفظ</string>
+    <string name="name_updated">تم تحديث الملف الشخصي</string>
+
+    <string name="status_online">متصل الآن</string>
+    <string name="status_offline">غير متصل</string>
+    <string name="status_last_seen">آخر ظهور %1$s</string>
+    <string name="status_last_seen_just_now">آخر ظهور قبل قليل</string>
+    <string name="status_last_seen_minutes">آخر ظهور قبل %1$d د</string>
+    <string name="status_last_seen_hours">آخر ظهور قبل %1$d س</string>
+
+    <string name="notification_service_channel_name">Darna نشط</string>
+    <string name="notification_service_title">Darna يعمل في الخلفية</string>
+    <string name="notification_service_text">تستقبل إشعارات الرسائل الجديدة طالما التطبيق يعمل</string>
+    <string name="notification_messages_channel_name">رسائل جديدة</string>
+    <string name="notification_new_image">📷 صورة</string>
+    <string name="notification_new_audio">🎤 رسالة صوتية</string>
+</resources>

@@ -1,0 +1,30 @@
+{
+  "_comment": "PLACEHOLDER FILE - استبدل هذا الملف بالملف الحقيقي الذي تحصل عليه من Firebase Console بعد إضافة تطبيق Android بحزمة com.adil.chatapp",
+  "project_info": {
+    "project_number": "000000000000",
+    "project_id": "REPLACE_WITH_YOUR_PROJECT_ID",
+    "storage_bucket": "REPLACE_WITH_YOUR_PROJECT_ID.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:000000000000:android:0000000000000000000000",
+        "android_client_info": {
+          "package_name": "com.adil.chatapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "REPLACE_WITH_YOUR_API_KEY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary">#4A6FE3</color>
+    <color name="primary_dark">#3457C4</color>
+    <color name="accent">#25D366</color>
+    <color name="background">#F5F6FA</color>
+    <color name="white">#FFFFFF</color>
+    <!-- Note: "black" is used throughout the app as the primary TEXT color
+         (never as a literal background), so it is safe to flip to a light
+         shade in values-night/colors.xml for dark mode readability. -->
+    <color name="black">#1C1C1E</color>
+    <color name="gray_light">#E4E6EB</color>
+    <color name="gray_text">#8A8D91</color>
+    <color name="bubble_sent">#4A6FE3</color>
+    <color name="bubble_received">#E4E6EB</color>
+    <color name="online_green">#25D366</color>
+    <!-- "surface" is used for card/bar backgrounds (message input bar, user
+         list rows, text field fill) that should turn dark in dark mode,
+         separately from "white" which stays literal white for text/icons
+         drawn on top of colored (always-blue) surfaces. -->
+    <color name="surface">#FFFFFF</color>
+</resources>

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="@color/primary"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/ivChatAvatar"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_marginEnd="12dp"
+            android:background="@drawable/bg_circle_received"
+            android:clipToOutline="true"
+            android:scaleType="centerCrop"
+            android:contentDescription="@string/profile_title" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvChatWithName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/tvChatWithStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textColor="@color/white"
+                android:alpha="0.85" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvMessages"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="8dp"
+        android:clipToPadding="false" />
+
+    <LinearLayout
+        android:id="@+id/recordingBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:gravity="center_vertical"
+        android:background="@color/surface"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tvRecordingTime"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="0:00 — جارِ التسجيل…"
+            android:textColor="@color/black"
+            android:paddingHorizontal="16dp" />
+
+        <Button
+            android:id="@+id/btnCancelRecording"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:text="إلغاء"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/gray_text"
+            android:layout_marginEnd="8dp" />
+
+        <Button
+            android:id="@+id/btnStopRecording"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:text="إرسال"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/primary" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/inputBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:gravity="center_vertical"
+        android:background="@color/surface">
+
+        <ImageButton
+            android:id="@+id/btnAttachImage"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_attach"
+            android:contentDescription="@string/attach_image"
+            android:layout_marginEnd="4dp" />
+
+        <ImageButton
+            android:id="@+id/btnCamera"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_camera"
+            android:contentDescription="@string/take_photo"
+            android:layout_marginEnd="4dp" />
+
+        <EditText
+            android:id="@+id/etMessage"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:hint="@string/type_message_hint"
+            android:background="@drawable/bg_edittext"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray_text"
+            android:paddingHorizontal="16dp"
+            android:layout_marginEnd="8dp" />
+
+        <ImageButton
+            android:id="@+id/btnMic"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_mic"
+            android:contentDescription="@string/record_audio"
+            android:layout_marginEnd="4dp" />
+
+        <Button
+            android:id="@+id/btnSend"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:text="@string/send_button"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/primary" />
+
+    </LinearLayout>
+
+</LinearLayout>
